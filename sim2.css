@@ -1,0 +1,120 @@
+/* CSS Geral Página 2 */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fff5f8;
+    color: #5d2f7e; /* Roxo suave */
+    background-image: linear-gradient(135deg, #ff8ca6, #ffb2d1); /* Fundo suave em tons de rosa */
+    background-size: 200% 200%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Animação suave de gradiente no fundo */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilo do H2 */
+h2 {
+    font-size: 1.7em;
+    color: #ff5b8a; /* Rosa suave */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2); /* Sombra suave no texto */
+    animation: fadeInText 1.5s ease-out;
+}
+
+/* Efeito de animação no H2 */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo das Mensagens */
+.mensagem p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 700px;
+    font-weight: 300;
+    color: #5d2f7e; /* Mesma cor do texto para garantir harmonia */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo claro para as mensagens */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out forwards;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+/* Efeito de fade nas mensagens */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo do Botão */
+.btn {
+    padding: 12px 24px;
+    background-color: #ff5b8a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3em;
+    cursor: pointer;
+    margin-top: 30px;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e14f75;
+    transform: scale(1.05);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .mensagem p {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 1.1em;
+        padding: 10px 18px;
+    }
+}
